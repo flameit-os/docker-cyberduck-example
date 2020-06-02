@@ -1,0 +1,38 @@
+image: zielonafabryka/cyberduck:latest
+
+default:
+  before_script:
+    - cd $CI_PROJECT_DIR/szablon && ls -alh
+
+stages:
+  - development
+  - staging
+  - production
+
+development:
+  stage: development
+  script: 
+    - duck --existing upload --synchronize $DEV_WEBDAV_HOST:/webapi/webdav/branch_$CI_COMMIT_BRANCH $CI_PROJECT_DIR/szablon/ -u $DEV_WEBDAV_USER -p $DEV_WEBDAV_PASS --parallel 20
+  environment:
+    name: development
+  except: 
+  - master
+  - staging
+
+staging:
+  stage: staging
+  script:
+    - duck --existing upload --synchronize $PROD_WEBDAV_HOST:/webapi/webdav/branch_$CI_COMMIT_BRANCH $CI_PROJECT_DIR/szablon/ -u $PROD_WEBDAV_USER -p $PROD_WEBDAV_PASS --parallel 20
+  environment:
+    name: staging
+  only:
+  - staging
+
+production:
+  stage: production
+  script:
+    - duck --existing upload --synchronize $PROD_WEBDAV_HOST:/webapi/webdav/branch_$CI_COMMIT_BRANCH $CI_PROJECT_DIR/szablon/ -u $PROD_WEBDAV_USER -p $PROD_WEBDAV_PASS --parallel 20
+  environment:
+    name: production
+  only:
+  - master
