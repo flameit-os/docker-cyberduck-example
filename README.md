@@ -6,7 +6,7 @@ Jak wdrożyć CI/CD szablonu w sklepie opartym o SaaS Shoper.pl
 
 Z powodu źle zaimplementowanej obsługi WebDAV na serwerach SaaS Shoper.pl musieliśmy troszkę nagimnastykować się aby w końcu ogarnąć integrację klienta konsolowego WebDAV (w tym przypadku Cyberduck) w Dockerze. Teraz możecie bez przeszkód uruchomić CI/CD dla szablonu sklepu.
 
-Ten szkielet/przykład został przygotowany do obsługi na GitLabie. Jeżeli kożystasz z innych narzędzi nie będzie większych problemów aby przenieść to rozwiązanie do innego środowiska po analizie: [.gitlab-ci.yml ](.gitlab-ci.yml)
+Ten szkielet/przykład został przygotowany do obsługi na GitLabie. Jeżeli korzystasz z innych narzędzi nie będzie większych problemów aby przenieść to rozwiązanie do innego środowiska po analizie: [.gitlab-ci.yml ](.gitlab-ci.yml)
 
 ### Zmienne do ustawienia w projekcie:
 
