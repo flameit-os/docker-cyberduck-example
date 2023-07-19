@@ -54,11 +54,11 @@ Dokumentacja Shopera: https://www.shoper.pl/help/artykul/webdav/
 * tworzyć podfoldery w `js, styles, images`,
 * usuwać: `js, less, sass, json, xml, css, gif, png, jpg, jpeg, ico, ttf, otf, woff, eot, swf, webp, webm` z folderów `js, styles, images` (oprócz `main. css|js`).
 
-
-## Autorzy
+## Autorzy i podziękowania
 
 * Paweł 'felixd' Wojciechowski [Outsourcing IT - Konopnickiej.Com](https://www.konopnickiej.com)
+* [Ustal.pl - Kwalifikowane podpisy elektroniczne](https://ustal.pl)
 
 # Copyright
 
-© 2020 [Zielona Fabryka - dekoracje wnętrz i florystyka](https://sklep.zielonafabryka.pl)
+© 2023 [FlameIT - Immersion Cooling](https://flameit.io)
