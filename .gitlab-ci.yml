@@ -1,4 +1,4 @@
-image: zielonafabryka/cyberduck:latest
+image: flameit/cyberduck:latest
 
 default:
   before_script:
