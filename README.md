@@ -15,7 +15,7 @@ DEV_WEBDAV_HOST
 DEV_WEBDAV_PASS
 DEV_WEBDAV_USER
 
-PROD_WEBDAV_HOST = https://sklep.zielonafabryka.pl
+PROD_WEBDAV_HOST = https://sklep.firma.pl
 PROD_WEBDAV_PASS
 PROD_WEBDAV_USER
 ```
