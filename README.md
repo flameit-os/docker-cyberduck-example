@@ -8,6 +8,8 @@ Z powodu źle zaimplementowanej obsługi WebDAV na serwerach SaaS Shoper.pl musi
 
 Ten szkielet/przykład został przygotowany do obsługi na GitLabie. Jeżeli korzystasz z innych narzędzi nie będzie większych problemów aby przenieść to rozwiązanie do innego środowiska po analizie: [.gitlab-ci.yml ](.gitlab-ci.yml)
 
+**Docker**: [https://github.com/flameit-os/docker-cyberduck](https://github.com/flameit-os/docker-cyberduck)
+
 ### Zmienne do ustawienia w projekcie:
 
 ```
